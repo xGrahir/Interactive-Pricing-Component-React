@@ -1,0 +1,40 @@
+.circles {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    background-image: url('../assets/pattern-circles.svg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+ }
+
+ .text {
+    z-index: 1;
+ }
+
+ .text h1 {
+    margin-bottom: 0.5rem;
+    color: #2b334e;
+    font-size: 1.3rem;
+ }
+
+ .text p {
+    color: hsl(225, 20%, 60%);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 25px;
+ }
+
+ @media (min-width: 768px) {
+   .text h1 {
+      font-size: 2rem;
+   }
+
+   .text p{
+      font-size: 1.5rem;
+   }
+
+   .about {
+      display: flex;
+   }
+ }

@@ -1,0 +1,117 @@
+.views {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.viewshigh {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.viewshighpanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.viewshigh input {
+    margin: 2.5rem 0;
+}
+
+.viewshigh h2 {
+    font-size: 1rem;
+    color: hsl(225, 20%, 60%);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.viewshigh p span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2b334e;
+}
+
+.views h2 {
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+    color: hsl(225, 20%, 60%);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.views p {
+    margin-top: 2rem;
+}
+
+.views p span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2b334e;
+}
+
+.billing {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.7rem;
+}
+
+.billing .percentage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 10px;
+    background-color: hsla(15, 100%, 70%, 0.159);
+    color: red;
+    
+}
+
+.billing .percentagehigh {
+    display: none;
+}
+
+.billing p {
+    margin: 0 0.6rem;
+    color: hsl(225, 20%, 60%);
+    font-weight: 600;
+}
+
+@media (min-width: 568px) {
+    .viewshigh{
+        display: flex;
+    }
+
+    .views {
+        display: none;
+    }
+
+    .billing {
+        position: relative;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .billing .percentage {
+        display: none;
+    }
+
+    .billing .percentagehigh {
+        position: absolute;
+        display: flex;
+        padding: 5px 5px;
+        right: 10px;
+        width: inherit;
+        font-size: 0.5rem;
+    }
+}

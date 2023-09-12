@@ -1,0 +1,12 @@
+.background {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -8rem;
+    height: 500px;
+    background-image: url("../assets/bg-pattern.svg");
+    background-size: cover;
+    text-align: center;
+    z-index: -1;
+}
